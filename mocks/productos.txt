@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Champú",
+    "precio": "123",
+    "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
+    "descripcion": "Un nuevo producto",
+    "codigo": "1234",
+    "stock": "12",
+    "id": 1,
+    "timeStamp": 1662671018831
+  },
+  {
+    "nombre": "Jabón",
+    "precio": "23",
+    "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
+    "descripcion": "Un nuevo producto 2",
+    "codigo": "456",
+    "stock": "12",
+    "id": 2,
+    "timeStamp": 1662671155583
+  },
+  {
+    "nombre": "Esponja",
+    "precio": "145",
+    "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
+    "descripcion": "Un nuevo producto 3",
+    "codigo": "45634",
+    "stock": "12",
+    "id": 3,
+    "timeStamp": 1662671180817
+  },
+  {
+    "nombre": "Acondicionador",
+    "precio": "345",
+    "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
+    "descripcion": "Un nuevo producto 6",
+    "codigo": "67867867",
+    "stock": "14",
+    "id": 4,
+    "timeStamp": 1662671214780
+  }
+]
