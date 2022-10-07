@@ -1,7 +1,5 @@
 [
   {
-    "id": 1,
-    "timeStamp": 1662673711487,
     "productos": [
       {
         "nombre": "Champú",
@@ -14,35 +12,32 @@
         "timeStamp": 1662671018831
       },
       {
-        "nombre": "Jabón",
-        "precio": "23",
+        "nombre": "Champú",
+        "precio": "123",
         "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
-        "descripcion": "Un nuevo producto 2",
-        "codigo": "456",
+        "descripcion": "Un nuevo producto",
+        "codigo": "1234",
         "stock": "12",
-        "id": 2,
-        "timeStamp": 1662671155583
+        "id": 1,
+        "timeStamp": 1662671018831
       },
       {
-        "nombre": "Esponja",
-        "precio": "145",
+        "nombre": "Champú",
+        "precio": "123",
         "urlImagen": "https://www.sedal.com.ar/content/dam/unilever/sunsilk/argentina/pack_shot/7791293030661-1966781-png.png",
-        "descripcion": "Un nuevo producto 3",
-        "codigo": "45634",
+        "descripcion": "Un nuevo producto",
+        "codigo": "1234",
         "stock": "12",
-        "id": 3,
-        "timeStamp": 1662671180817
+        "id": 1,
+        "timeStamp": 1662671018831
       }
-    ]
+    ],
+    "id": 1,
+    "timeStamp": "2022-10-07T03:54:49.353Z"
   },
   {
+    "productos": [],
     "id": 2,
-    "timeStamp": 1662673712796,
-    "productos": []
-  },
-  {
-    "id": 3,
-    "timeStamp": 1662673713595,
-    "productos": []
+    "timeStamp": "2022-10-07T03:54:54.073Z"
   }
 ]
