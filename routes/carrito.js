@@ -16,9 +16,11 @@ carritoRouter.post('/', async (req, res) => {
     }
     const fecha = new Date();
     const newObj = { ...objeto, id: newId, timeStamp: fecha }
+    
     try {
-        await carritosApi.save(newObj)
-        res.status(200).json({ mensaje: 'Nuevo carrito guardado' })
+        const carritoCreado = await carritosApi.save(newObj);
+        
+        res.send({ id: carritoCreado.id });
     } catch (error) {
         res.status(500).json({ error: 'Error al guardar' })
     }
@@ -40,7 +42,8 @@ carritoRouter.delete('/:id', async (req, res) => {
 
 carritoRouter.get('/:id/productos', async (req, res) => { 
     try {
-        await carritosApi.getProductsFromCart(req, res);
+        const carrito = await carritosApi.getById(req, res);
+        res.send(carrito);
     } catch (error) {
         return res.status(400).json({ error: "Carrito no encontrado" });
     }

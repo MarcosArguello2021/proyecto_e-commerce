@@ -17,7 +17,7 @@ class ContenedorFirebase {
             const result = []
             const snapshot = await this.coleccion.get();
             snapshot.forEach(doc => {
-                result.push({ id: doc.id, ...doc.data() })
+                result.push(doc.data())
             })
             return result
 
@@ -28,13 +28,15 @@ class ContenedorFirebase {
 
     async getById(req, res){
         const id = req.params.id;
+        console.log(id);
         try {
-                const doc = await this.coleccion.doc(id).get()
+                const doc = await this.coleccion.doc(id).get();
                 if (!doc.exists) {
                     throw new Error(`Error al listar por id: no se encontró`)
                 } else {
                     const data = doc.data()
-                    return { ...data, id }
+                    console.log(data);
+                    return { ...data, id };
                 }
             } 
         catch (error) {
@@ -44,7 +46,11 @@ class ContenedorFirebase {
 
     async save(newObj){
         try{
-            const guardado = await this.coleccion.add(newObj[0]);
+            const objeto = [];
+            const { productos, timeStamp } = newObj;
+            objeto.push({productos, timeStamp});
+            console.log(objeto);
+            const guardado = await this.coleccion.add(objeto[0]);
             return { ...newObj, id: guardado.id }
         }catch(error){
             throw new Error(`Error al guardar: ${error}`)
@@ -82,4 +88,4 @@ class ContenedorFirebase {
     }
 
 }
-export default ContenedorFirebase
+export default ContenedorFirebase;
